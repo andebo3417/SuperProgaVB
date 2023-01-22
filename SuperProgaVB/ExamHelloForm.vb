@@ -1,5 +1,5 @@
 ﻿Public Class ExamHelloForm
-    Dim parent_ As Form1
+    Private parent_ As Form1
     Public Sub New(parent_ As Form1)
         InitializeComponent()
         Me.parent_ = parent_
