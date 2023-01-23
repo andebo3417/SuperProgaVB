@@ -1,13 +1,13 @@
 ﻿Public Class MarathonHelloForm
-    Private parent_ As Form1
-    Public MarathonHelloForm(Form1 parent)
-        {
-            InitializeComponent();
-            this.parent = parent;
-        }
 
-        Private void BtnProceed_Click(Object sender, EventArgs e)
-        {
-            parent.openChildForm(New ExamForm("marathon"));
-        }
+    Private parent_ As Form1
+
+    Public Sub New(parent_ As Form1)
+        InitializeComponent()
+        Me.parent_ = parent_
+    End Sub
+
+    Private Sub BtnProceed_Click(sender As Object, e As EventArgs) Handles btnProceed.Click
+        parent_.openChildForm(New ExamForm("marathon"))
+    End Sub
 End Class

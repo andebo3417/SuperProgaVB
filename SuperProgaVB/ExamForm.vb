@@ -36,7 +36,7 @@ Public Class ExamForm
         QuizMode = mode
         Me.theme = theme
         questions = createList()
-        answers = New Integer(questions.Length) {}
+        answers = New Integer(questions.Length - 1) {}
         curQuestion = 0
         showQuestion(questions(curQuestion))
     End Sub
@@ -46,7 +46,7 @@ Public Class ExamForm
         RtbQuestion.BorderStyle = BorderStyle.None
         QuizMode = mode
         questions = createList()
-        answers = New Integer(questions.Length) {}
+        answers = New Integer(questions.Length - 1) {}
         curQuestion = 0
         showQuestion(questions(curQuestion))
         If mode = "ticket" Then
@@ -129,8 +129,6 @@ Public Class ExamForm
             End If
         End If
     End Sub
-
-    'Private OpenTicketForm(sender As Object, e As EventArgs) Handles btnTicket.Click
 
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
         curQuestion = curQuestion + 1

@@ -61,7 +61,7 @@ Partial Class TheoryForm
         '
         Me.panelTheory.Controls.Add(Me.btnBack)
         Me.panelTheory.Controls.Add(Me.rtbTheory)
-        Me.panelTheory.Location = New System.Drawing.Point(720, 402)
+        Me.panelTheory.Location = New System.Drawing.Point(972, 572)
         Me.panelTheory.Name = "panelTheory"
         Me.panelTheory.Size = New System.Drawing.Size(1037, 612)
         Me.panelTheory.TabIndex = 54

@@ -52,15 +52,15 @@
     End Sub
 
     Private Sub OpenTicketForm(sender As Object, e As EventArgs) Handles btnTicket.Click
-        'openChildForm(New TicketHelloForm(Me))
+        openChildForm(New TicketHelloForm(Me))
     End Sub
 
     Private Sub OpenThemeForm(sender As Object, e As EventArgs) Handles btnTheme.Click
-        'openChildForm(New ThemeHelloForm(Me))
+        openChildForm(New ThemeHelloForm(Me))
     End Sub
 
     Private Sub OpenMarathonForm(sender As Object, e As EventArgs) Handles btnMarathon.Click
-        'openChildForm(New MarathonHelloForm(Me))
+        openChildForm(New MarathonHelloForm(Me))
     End Sub
 
     Private Sub OpenTheoryForm(sender As Object, e As EventArgs) Handles btnTheory.Click

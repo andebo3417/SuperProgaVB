@@ -211,7 +211,7 @@ Public Class Question
     End Function
 
     Public Shared Function getAll() As Question()
-        Dim all As Question() = New Question(questionList.Length) {}
+        Dim all As Question() = New Question(questionList.Length - 1) {}
         questionList.CopyTo(all, 0)
         Return all
     End Function
